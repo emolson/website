@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Redux-Starter-Kit implemented using architecture of https://github.com/markerikson/rsk-convert-todos-example
+
 ## Available Scripts
 
 In the project directory, you can run:
