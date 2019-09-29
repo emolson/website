@@ -1,10 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import {Provider} from 'react-redux';
-import store from './reduxConfig/configureStore';
-
 
 import {Header} from './Header';
+
 
 function Index() {
     return <h2>Home</h2>;
@@ -16,7 +14,6 @@ function About() {
 
 function App() {
     return (
-        <Provider store={store}>
             <Router>
                 <Header/>
                 <Route path="/" exact component={Index}/>
@@ -24,7 +21,6 @@ function App() {
             </Router>
             //Body
             //Footer
-        </Provider>
     );
 }
 

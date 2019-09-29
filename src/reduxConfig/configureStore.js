@@ -1,6 +1,8 @@
 import { configureStore } from 'redux-starter-kit';
-import { counter } from './slices'
+import rootReducer from './reducers'
 
 const store = configureStore({
-    reducer: counter.reducer
+    reducer: rootReducer
 });
+
+export default store;

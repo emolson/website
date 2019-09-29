@@ -1,3 +1,3 @@
-import counter from "./counter";
+import counterSlice from "./counter";
 
-export {counter}
+export {counterSlice}
