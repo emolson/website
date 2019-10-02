@@ -5,8 +5,8 @@ import { increment, decrement } from '../reduxConfig/slices/counter';
 
 const Main = ({counter, increment, decrement}) => (
     <React.Fragment>
-        <button onClick={increment}>Increase</button>
-        <button onClick={decrement}>Decrease</button>
+        <button onClick={() => increment()}>Increase</button>
+        <button onClick={() => decrement()}>Decrease</button>
         <div>{JSON.stringify(counter)}</div>
     </React.Fragment>
 );
