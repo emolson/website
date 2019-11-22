@@ -2,11 +2,8 @@ import React from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
 import {Header} from './Header';
+import Main from './Main/Main';
 
-
-function Index() {
-    return <h2>Home</h2>;
-}
 
 function About({...props}) {
     console.log(props);
@@ -18,16 +15,15 @@ function About({...props}) {
 
 function App() {
     return (
-        <Router>
-            <Header/>
-            <Route path="/" exact component={Index}/>
-            <Route
-                path="/about/"
-                render={props => <About history="some text here" {...props} />}
-            />
-        </Router>
-        //Body
-        //Footer
+            <Router>
+                <Header/>
+                <Route path="/" exact component={Main}/>
+                <Route
+                    path="/about/"
+                    render={props => <About history="some text here" {...props} />}
+                />            </Router>
+            //Body
+            //Footer
     );
 }
 
