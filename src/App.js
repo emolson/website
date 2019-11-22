@@ -8,19 +8,26 @@ function Index() {
     return <h2>Home</h2>;
 }
 
-function About() {
-    return <h2>About</h2>;
+function About({...props}) {
+    console.log(props);
+    return (<div>
+        <h2>About</h2>
+        <h1></h1>
+    </div>);
 }
 
 function App() {
     return (
-            <Router>
-                <Header/>
-                <Route path="/" exact component={Index}/>
-                <Route path="/about/" component={About}/>
-            </Router>
-            //Body
-            //Footer
+        <Router>
+            <Header/>
+            <Route path="/" exact component={Index}/>
+            <Route
+                path="/about/"
+                render={props => <About history="some text here" {...props} />}
+            />
+        </Router>
+        //Body
+        //Footer
     );
 }
 
