@@ -1,26 +1,16 @@
 import React from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
-import {Header} from './Header';
-import Main from './Main/Main';
-import Hooks from './Hooks/Hooks';
+import Sandbox from "./sandbox"
+import Blog from "./blog"
+
 
 function App() {
     return (
             <Router>
-                {/*Header*/}
-                <Header/>
-
-                {/*Body*/}
-                <Route path="/redux" exact component={Main}/>
-                <Route
-                    path="/hooks"
-                    render={props => <Hooks history="some text here" {...props} />}
-                />
-
-                {/*Footer*/}
+                <Route path="/" component={Blog}/>
+                <Route path="/sandbox" exact component={Sandbox}/>
             </Router>
-
     );
 }
 
