@@ -14,6 +14,9 @@ const NavMenu = () => (
             <Menu.Item as={Link} to={'/'}>
                 <Header inverted size={'medium'}>Eton</Header>
             </Menu.Item>
+            <Menu.Item position={'right'}>
+                <Header inverted size={'small'}>A Site About Me</Header>
+            </Menu.Item>
             {/*<Menu.Menu position={'right'}>*/}
             {/*    <Menu.Item as={Link} to={'/learning'}>*/}
             {/*        Learning*/}
