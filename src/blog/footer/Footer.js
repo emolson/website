@@ -14,6 +14,7 @@ const ResponsiveTopNav = () => {
                     vertical
 
                 >
+                    This Is A Footer
                     <NavigationMenu/>
                 </Segment>
         )
