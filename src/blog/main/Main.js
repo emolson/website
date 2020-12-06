@@ -7,7 +7,7 @@ import ethanTwoSunglassesPhoto from '../photos/ETHANTWOSUNGLASSES.png';
 function Main() {
     return (
         <>
-            <Grid padded stackable>
+            <Grid centered padded stackable>
                 <Grid.Column verticalAlign={'middle'} width={10}>
                     <Container textAlign={'center'}>
                         <Header as='h1'>A Site About Me</Header>
@@ -18,7 +18,7 @@ function Main() {
                     </Container>
                 </Grid.Column>
                 <Grid.Column width={6}>
-                    <Image style={{maxHeight:'500px'}} src={ethanTwoSunglassesPhoto} />
+                    <Image centered style={{maxHeight:'500px'}} src={ethanTwoSunglassesPhoto} />
                 </Grid.Column>
             </Grid>
 
