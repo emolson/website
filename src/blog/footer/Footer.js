@@ -14,7 +14,7 @@ const ResponsiveTopNav = () => {
                     vertical
 
                 >
-                    Something in the nav
+                    This shouldnt be here
                     <NavigationMenu/>
                 </Segment>
         )
